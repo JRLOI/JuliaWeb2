@@ -1,2 +1,2 @@
-# JuliaWeb2
+# juliaweb2
 Web Design 2 Assignment 2021
