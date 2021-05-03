@@ -1,0 +1,451 @@
+@charset "utf-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html, 
+body {
+	height: 100%; /* this alongside page-wrapper keeps footer stuck at the bottm */
+}
+
+/* Page Wrapper - to keep footer at the bottom */
+.page-wrapper {
+	min-height: 100%;
+}
+
+/* ///////////// NAVIGATION /////////////// */
+.navbar {
+    background-color: rgba(0,0,0,0.80);
+	font-family: 'Noto Sans HK', sans-serif;
+}
+
+button {
+    color: #FFB303;
+}
+
+.dropdown-menu {
+    background-color: #000;
+}
+.navbar-nav , mr-auto{
+
+
+
+}
+.navbar-brand {
+    background-image: url(../Images/logo-small.png);
+}
+
+
+
+.dropdown-item {
+    color: #FFB303;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+	color: #fff;
+	text-decoration: none;
+	background-color: rgba(0,0,0,0.80)
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.80);
+}
+/* ///////////// end NAVIGATION /////////////// */
+
+/* ///////////// Background  /////////////// */
+body {
+    background-image: url(../Images/background.jpg);
+    background-color: #073F02;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+/* ///////////// END Background  /////////////// */
+
+/* ///////////// Typography  /////////////// */
+
+h1, 
+h5 {
+	font-family: 'Days One', sans-serif;
+	color: #B9C326;
+}
+
+h2 {
+    color: #FFB303;
+	font-family: 'Noto Sans HK', sans-serif;
+}
+
+h1, 
+h2 {
+	text-align: center;
+}
+
+p {
+    font-family: 'Noto Sans HK', sans-serif;
+    color: #FFF;
+    text-align: justify;
+}
+
+/* //// IMAGES /// */
+#hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.gallery img {
+  display: block;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 100ms ease-out;
+}
+.gallery img:hover {
+  transform: scale(1.04);
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/*Copyright (c) 2021 by Arbaz Khan (https://codepen.io/arbaz_js/pen/BaBQmXJ)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*/
+
+
+
+/* //// end IMAGES /// */
+
+.btn {
+    background-image: -webkit-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+	font-family: 'Days One', sans-serif;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+.card {
+    background-color: rgba(0,0,0,0.80);
+}
+.row .col-sm-12.col-lg-6 .img-fluid {
+}
+.box {
+    background-image: -webkit-linear-gradient(270deg,rgba(7,63,2,1.00) 0%,rgba(16,70,3,1.00) 59.58%,rgba(5,121,4,1.00) 99.48%);
+    background-image: -moz-linear-gradient(270deg,rgba(7,63,2,1.00) 0%,rgba(16,70,3,1.00) 59.58%,rgba(5,121,4,1.00) 99.48%);
+    background-image: -o-linear-gradient(270deg,rgba(7,63,2,1.00) 0%,rgba(16,70,3,1.00) 59.58%,rgba(5,121,4,1.00) 99.48%);
+    background-image: linear-gradient(180deg,rgba(7,63,2,1.00) 0%,rgba(16,70,3,1.00) 59.58%,rgba(5,121,4,1.00) 99.48%);
+}
+.gap-less {
+    padding-left: 0px;
+    margin-right: 0px;
+}
+.foot {
+    color: #FFFFFF;
+}
+.green-foot {
+    color: #B9C326;
+}
+.orange-foot {
+    color: #FFB303;
+}
+li  {
+    list-style-type: none;
+}
+.footer {
+    background-color: rgba(0,0,0,0.80);
+}
+.foot-up {
+    padding-top: 1rem;
+}
+.dark {
+    background-color: rgba(0,0,0,0.80);
+}
+.bed-rock {
+    font-size: 0.7em;
+    color: #FFFFFF;
+}
+.quote {
+    color: #FFB303;
+    font-style: italic;
+    text-align: center;
+    background-color: rgba(0,0,0,0.80);
+}
+h3 {
+    color: #B9C326;
+    text-align: center;
+}
+.formula {
+    font-size: 1rem;
+    font-family: 'Noto Sans HK', sans-serif;
+    color: #FFFFFF;
+}
+fieldset {
+    border: medium double #B9C326;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+legend {
+    color: #000000;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(249,126,71,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(249,126,71,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(249,126,71,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,180,4,1.00) 0%,rgba(249,126,71,1.00) 100%);
+    font-family: 'Days One', sans-serif;
+    text-align: center;
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+input {
+    border: medium solid #B9C326;
+    padding-top: 0.4rem;
+    padding-right: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.4rem;
+}
+select {
+    padding-top: 0.4rem;
+    padding-right: 0.4rem;
+    padding-bottom: 0.4rem;
+    padding-left: 0.4rem;
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    margin-left: 0.3rem;
+}
+#submit-btn input {
+    background-image: -webkit-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,180,4,1.00) 0%,rgba(255,78,0,1.00) 100%);
+    font-family: 'Days One', sans-serif;
+    border: none;
+    padding-top: 0.6rem;
+    padding-right: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    width: 10rem;
+}
+#submit-btn {
+    text-align: center;
+}
+
+
+textarea {
+    border: medium solid #B9C326;
+    width: 99%;
+    height: 10rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* animations */
+
+.heartbeat{-webkit-animation:heartbeat 1.5s ease-in-out infinite both;animation:heartbeat 1.5s ease-in-out infinite both}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-5-3 23:48:11
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+@-webkit-keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}@keyframes heartbeat{from{-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:center center;transform-origin:center center;-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}10%{-webkit-transform:scale(.91);transform:scale(.91);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}17%{-webkit-transform:scale(.98);transform:scale(.98);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}33%{-webkit-transform:scale(.87);transform:scale(.87);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}45%{-webkit-transform:scale(1);transform:scale(1);-webkit-animation-timing-function:ease-out;animation-timing-function:ease-out}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //// end IMAGES /// */
+
+
+
+/* //// Media Queries /// */
+@media (min-width:576px){
+#hero {
+    margin-top: 6rem;
+}
+	
+.btn {
+	margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-left: 0.8rem;
+}
+.box {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+.space {
+    margin-top: 4rem;
+}
+.footer {
+    margin-top: 6rem;
+}
+.foot {
+    text-align: center;
+}
+h1 {
+    padding-top: 4rem;
+}
+h2 {
+    padding-bottom: 4rem;
+}
+.quote {
+    margin-top: 4rem;
+}
+.part {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.part label {
+    width: 15%;
+    display: inline-block;
+    margin-left: 0.3px;
+}
+.part input {
+    width: 25%;
+    margin-left: 0.2rem;
+    margin-right: 0.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+	
+}
+
+@media (min-width:992px){
+#hero {
+    margin-top: 17rem;
+}
+.btn {
+	margin-top: 3rem;
+    margin-right: 0.8rem;
+    margin-bottom: 6rem;
+    margin-left: 0.8rem;
+}
+.box {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.space {
+    margin-top: 8rem;
+}
+.footer {
+    margin-top: 10rem;
+}
+.right {
+    padding-left: 40%;
+}
+
+h1,
+h2 {
+
+	font-size: 3em;
+}
+h1 {
+    padding-top: 6rem;
+}
+.part input {
+    width: 28%;
+}
+.part label {
+    width: 15%;
+    margin-right: 0.3rem;
+}
+.formula {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+	
+	
+
+
+
+
+
+}
+
+@media (max-width:575.98px){
+	.btn {
+	margin-top: 0.8rem;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+    margin-left: 0.8rem;
+}	
+.footer {
+    margin-top: 6rem;
+}
+h1 {
+    padding-top: 2rem;
+
+}
+h2 {
+    padding-bottom: 2rem;
+}
+.quote {
+    margin-top: 1rem;
+}
+input {
+    display: block;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
+    width: 100%;
+}
+
+
+
+
+
+}
